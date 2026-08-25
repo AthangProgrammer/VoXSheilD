@@ -108,7 +108,9 @@ export function Spectrum({ audioRef, file }: Props) {
         if (i === 0) ctx.moveTo(0, y);
         else ctx.lineTo(i * slice, y);
       }
-      ctx.strokeStyle = "oklch(0.78 0.15 168)";
+      ctx.strokeStyle =
+        getComputedStyle(canvas).getPropertyValue("--verdict-real").trim() ||
+        "oklch(0.5 0.075 148)";
       ctx.lineWidth = 1.5;
       ctx.stroke();
     };
