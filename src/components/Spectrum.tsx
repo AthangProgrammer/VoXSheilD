@@ -144,8 +144,8 @@ export function Spectrum({ audioRef, file }: Props) {
         {values.map((value, index) => (
           <div
             key={index}
-            className="flex-1 rounded-full bg-gradient-to-t from-primary/35 via-primary to-verdict-real transition-[height] duration-100 ease-out"
-            style={{ height: `${6 + Math.pow(value, 0.7) * 94}%` }}
+            className="flex-1 rounded-t-full bg-gradient-to-t from-primary/35 via-primary to-verdict-real transition-[height] duration-100 ease-out"
+            style={{ height: `${4 + Math.pow(value, 0.7) * 96}%` }}
           />
         ))}
       </div>
